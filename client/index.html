@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/okg7sbt.css">
+  </head>
+  <body>
+    <h1 class="title_txt">Register for Sleep Tracker</h1>
+    <div class="registration">
+      <div class="registration_styling">
+        First Name:<input id="fname_field" class="input_style" type="text" />
+        Last Name:<input id="lname_field" class="input_style" type="text" />
+        Email:<input id="email_field" class="input_style" type="text" />
+        Password:<input id="password_field" class="input_style" type="text" />
+        <button id="register_btn" class="btn">Get Started</button>
+        <p class="reg_error_msg">
+        </p>
+        <p class="text">
+          Already have an account?
+        </p>
+        <button id="switch_to_login" class="btn">Log-In Here</button>
+      </div>
+    </div>
+
+    <div class="log_in">
+      <div class="log_in_styling">
+        Email:<input id="user_email" class="input_style" type="text" />
+        Password:<input id="user_password" class="input_style" type="text" />
+        <button id="log_in_btn" class="btn">Log In</button>
+        <p class="login_error_msg">
+        </p>
+        <button id="switch_to_reg" class="btn">Registration</button>
+      </div>
+    </div>
+
+    <div id="home_page">
+      <div class="home_page_styling">
+        <p class="text">
+          Choose an option:
+          </p>
+          <div class="option_container">
+          <button id="record_btn" class="btn">Record Sleep Data</button>
+          <button id="sleep_record" class="btn">See Sleep Records</button>
+        </div>
+
+          <div id="record_section">
+          <p class="text">
+            Select a day:
+            </p>
+            <select id="day_select">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+              </select>
+
+              <p class="text">
+                How many hours did you sleep?
+                </p>
+                <span id="value_output">8</span>
+                <input id="hours_slider" type="range" min="0" max="16">
+
+              <p class="text">
+                Were you on your phone before bed?
+              </p>
+                yes<input id="phone_select1" name="phone" type="radio" value="yes">
+                no<input id="phone_select2" name="phone" type="radio" value="no">
+
+              <p class="text">
+                Were you late to work/class?
+                </p>
+                yes<input id="late_select1" name="late" type="radio" value="yes">
+                no<input id="late_select2" name="late" type="radio" value="no">
+
+              <p class="text">
+                Mood in the morning:
+                </p>
+                good<input id="mood_select1" name="mood" type="radio" value="good">
+                fair<input id="mood_select2" name="mood" type="radio" value="fair">
+                bad<input id="mood_select3" name="mood" type="radio" value="bad"><br>
+
+                <button id="submit_record" class="btn">Record</button>
+                <button id="change_btn" class="btn">Save Changes</button>
+            </div>
+
+            <div id="sleep_record_list">
+              </div>
+            </div>
+        </div>
+
+
+        <script src="app.js"></script>
+
+    </body>
+</html>
