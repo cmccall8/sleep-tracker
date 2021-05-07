@@ -1,4 +1,6 @@
-# Resourceful Project
+# Resourceful Project (Sleep Tracker)
+This application is a simple sleep tracker app implemented as a RESTful API. 
+
 ### Sleep Logs
 Attributes:
 * Day (string)
@@ -53,3 +55,6 @@ Session Create | POST | /sessions
 ### Password Hashing
 * passlib.hash
 * bcrypt
+
+
+<img src="client/Screen Shot 2021-05-06 at 9.50.44 PM.png"/>
